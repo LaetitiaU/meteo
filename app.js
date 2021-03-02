@@ -3,7 +3,7 @@ const button = document.getElementById("button");
 let listeMeteo = document.querySelector("#listeInfos");
 
 
-let url = 'http://api.openweathermap.org/data/2.5/weather?q=marseille&appid=ebbef056fabd1f5c3932576f5181de0c';
+let url = 'https://api.openweathermap.org/data/2.5/weather?q=marseille&appid=ebbef056fabd1f5c3932576f5181de0c';
 
 
 
@@ -15,7 +15,7 @@ function meteoCity(nameRandom) {
 
     // Fetch: Requete HTTP - Fetch signifie " chercher "
 
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${nameRandom}&units=metric&lang=fr&appid=ebbef056fabd1f5c3932576f5181de0c`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${nameRandom}&units=metric&lang=fr&appid=ebbef056fabd1f5c3932576f5181de0c`)
         .then(Response => Response.json())
         .then(data => {
              
